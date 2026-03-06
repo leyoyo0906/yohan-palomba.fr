@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yohan Palomba — Ambassadeur INOVEA | Gestion de Patrimoine</title>
+    <meta name="description" content="Yohan Palomba, ambassadeur INOVEA. Je vous sensibilise à l'importance de la gestion de patrimoine et vous mets en relation avec un conseiller expert. 100% gratuit.">
+    <meta name="keywords" content="gestion de patrimoine, INOVEA, Ethiconsult, ambassadeur, conseil patrimoine, épargne, investissement, gratuit">
+    <meta name="author" content="Yohan Palomba">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (partage réseaux sociaux) -->
+    <meta property="og:title" content="Yohan Palomba — Ambassadeur INOVEA">
+    <meta property="og:description" content="Votre argent mérite mieux qu'un livret. Je vous sensibilise à la gestion de patrimoine et vous mets en relation avec un expert. 100% gratuit.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+
+    <link rel="icon" href="https://www.inovea-group.com/wp-content/uploads/2025/04/site-inovea-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --inov-blue-dark: #0A5F7A;
+            --inov-blue: #0E8CA3;
+            --inov-cyan: #12A5B8;
+            --inov-cyan-light: #1ABFD0;
+            --inov-turquoise: #22D4E0;
+            --inov-teal: #17B5C7;
+            --gradient-hero: linear-gradient(160deg, #0A5F7A 0%, #0E8CA3 25%, #12A5B8 50%, #1ABFD0 75%, #22D4E0 100%);
+            --gradient-hero-deep: linear-gradient(170deg, #074A61 0%, #0A5F7A 30%, #0E8CA3 60%, #17B5C7 100%);
+            --inov-coral: #F4845F;
+            --inov-coral-light: #F6A085;
+            --inov-coral-bg: rgba(244,132,95,0.12);
+            --white: #FFFFFF;
+            --light: #F5F8FA;
+            --gray-100: #EDF1F5;
+            --gray-200: #D9E0E8;
+            --gray-400: #8E99A8;
+            --gray-600: #5A6577;
+            --gray-800: #2D3748;
+            --dark: #1A2332;
+            --shadow-sm: 0 2px 10px rgba(10,95,122,0.08);
+            --shadow-md: 0 8px 30px rgba(10,95,122,0.12);
+            --shadow-lg: 0 20px 60px rgba(10,95,122,0.18);
+            --shadow-cyan: 0 8px 30px rgba(18,165,184,0.25);
+            --shadow-coral: 0 8px 25px rgba(244,132,95,0.3);
+            --radius: 16px;
+            --radius-lg: 24px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--gray-800);
+            background: var(--white);
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 0.8rem 0;
+            transition: all 0.4s;
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            padding: 0.5rem 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .nav-logo img { height: 36px; object-fit: contain; }
+
+        .nav-logo-sep {
+            width: 1px;
+            height: 28px;
+            background: rgba(255,255,255,0.3);
+        }
+
+        .navbar.scrolled .nav-logo-sep { background: var(--gray-200); }
+
+        .nav-logo-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .navbar.scrolled .nav-logo-name { color: var(--gray-800); }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.6rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgba(255,255,255,0.85);
+            font-weight: 500;
+            font-size: 0.87rem;
+            transition: all 0.3s;
+        }
+
+        .navbar.scrolled .nav-links a { color: var(--gray-600); }
+        .nav-links a:hover { color: var(--white); }
+        .navbar.scrolled .nav-links a:hover { color: var(--inov-cyan); }
+
+        .nav-cta-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .nav-cta {
+            background: var(--inov-blue) !important;
+            color: var(--white) !important;
+            padding: 0.55rem 1.4rem;
+            border-radius: 8px;
+            font-weight: 600 !important;
+            font-size: 0.85rem !important;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.3s !important;
+            box-shadow: var(--shadow-cyan);
+        }
+
+        .nav-cta:hover { background: var(--inov-blue-dark) !important; transform: translateY(-1px); }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 2px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        .navbar.scrolled .hamburger span { background: var(--gray-800); }
+
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-hex {
+            position: absolute;
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 550px;
+            height: 550px;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+
+        .hero-hex svg { width: 100%; height: 100%; }
+
+        .hero-glow {
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.45rem 1.1rem;
+            border-radius: 50px;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .hero-badge img { height: 18px; }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+            margin-bottom: 1.3rem;
+            animation: fadeInUp 0.7s ease 0.15s both;
+        }
+
+        .hero h1 .coral {
+            background: var(--inov-coral);
+            padding: 0.05em 0.3em;
+            border-radius: 6px;
+            display: inline;
+        }
+
+        .hero-subtitle {
+            font-size: 1.02rem;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.8;
+            margin-bottom: 2.2rem;
+            max-width: 520px;
+            animation: fadeInUp 0.7s ease 0.3s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.7s ease 0.45s both;
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--inov-blue);
+            padding: 0.85rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.92rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            border: 2px solid var(--white);
+        }
+
+        .btn-white:hover {
+            background: transparent;
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.35);
+            color: var(--white);
+            padding: 0.85rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.92rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            animation: fadeInRight 0.8s ease 0.4s both;
+        }
+
+        .hero-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+
+        .hero-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1.2rem;
+            border: 3px solid rgba(255,255,255,0.25);
+            box-shadow: 0 0 40px rgba(0,0,0,0.15);
+        }
+
+        .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+        .hero-card-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.2rem;
+        }
+
+        .hero-card-role {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.82rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-card-role strong { color: var(--inov-coral-light); font-weight: 600; }
+
+        .hero-card-mission {
+            background: rgba(244,132,95,0.15);
+            border: 1px solid rgba(244,132,95,0.25);
+            border-radius: 10px;
+            padding: 0.7rem 1rem;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.78rem;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero-card-mission em { color: var(--inov-coral-light); font-style: normal; font-weight: 600; }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.6rem;
+        }
+
+        .hero-stat {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 0.8rem 0.4rem;
+        }
+
+        .hero-stat-val { font-weight: 700; font-size: 1.15rem; color: var(--white); }
+        .hero-stat-lbl { color: rgba(255,255,255,0.55); font-size: 0.68rem; margin-top: 0.15rem; line-height: 1.3; }
+
+        .numbers-bar {
+            background: var(--white);
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .numbers-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .num-val { font-size: 2.5rem; font-weight: 800; color: var(--inov-cyan); }
+        .num-lbl { color: var(--gray-600); font-size: 0.88rem; margin-top: 0.2rem; }
+
+        section { padding: 5rem 0; }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header { text-align: center; margin-bottom: 3.5rem; }
+
+        .section-label {
+            display: inline-block;
+            background: var(--inov-coral-bg);
+            color: var(--inov-coral);
+            padding: 0.35rem 1.1rem;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 0.8rem;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.8rem;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--gray-600);
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .free-banner {
+            background: linear-gradient(135deg, rgba(244,132,95,0.08), rgba(18,165,184,0.08));
+            border: 1px solid rgba(244,132,95,0.15);
+            border-radius: var(--radius);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            max-width: 700px;
+            margin: -1rem auto 3.5rem;
+        }
+
+        .free-banner p { font-size: 1.05rem; color: var(--dark); font-weight: 600; }
+        .free-banner p .coral { color: var(--inov-coral); }
+        .free-banner span { display: block; font-size: 0.88rem; color: var(--gray-600); font-weight: 400; margin-top: 0.3rem; }
+
+        .role { background: var(--light); }
+
+        .role-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .role-content h3 { font-size: 1.6rem; font-weight: 700; color: var(--dark); margin-bottom: 1rem; line-height: 1.3; }
+        .role-content h3 .coral { color: var(--inov-coral); }
+        .role-content p { color: var(--gray-600); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.8; }
+        .role-content strong { color: var(--dark); }
+
+        .role-cards { display: flex; flex-direction: column; gap: 1rem; }
+
+        .role-card {
+            display: flex;
+            gap: 1rem;
+            padding: 1.3rem;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+        }
+
+        .role-card:hover { border-color: var(--inov-cyan); box-shadow: var(--shadow-md); transform: translateX(5px); }
+
+        .role-card-icon {
+            width: 48px; height: 48px;
+            background: var(--gradient-hero);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; flex-shrink: 0;
+        }
+
+        .role-card h4 { color: var(--dark); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.2rem; }
+        .role-card p { color: var(--gray-600); font-size: 0.83rem; line-height: 1.5; margin: 0; }
+
+        .story { background: var(--white); }
+
+        .story-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3.5rem;
+            align-items: start;
+        }
+
+        .story-quote {
+            font-size: 1.4rem; font-weight: 600; font-style: italic;
+            color: var(--dark); line-height: 1.45; margin-bottom: 1.8rem;
+            padding-left: 1.2rem; border-left: 3px solid var(--inov-coral);
+        }
+
+        .story-text p { color: var(--gray-600); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.8; }
+        .story-text strong { color: var(--dark); }
+        .story-text .hl { color: var(--inov-coral); font-weight: 600; }
+
+        .timeline { display: flex; flex-direction: column; gap: 1rem; }
+
+        .tl-item {
+            display: flex; gap: 1rem; padding: 1.2rem;
+            background: var(--light); border-radius: var(--radius);
+            border: 1px solid var(--gray-200); transition: all 0.3s;
+        }
+
+        .tl-item:hover { border-color: var(--inov-cyan); box-shadow: var(--shadow-md); transform: translateX(4px); }
+
+        .tl-icon {
+            width: 44px; height: 44px;
+            background: var(--gradient-hero); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; flex-shrink: 0; color: var(--white);
+        }
+
+        .tl-item h4 { color: var(--dark); font-size: 0.95rem; font-weight: 600; margin-bottom: 0.2rem; }
+        .tl-item p { color: var(--gray-600); font-size: 0.83rem; line-height: 1.5; }
+
+        .constat { background: var(--light); }
+
+        .constat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+
+        .constat-card {
+            background: var(--white); border-radius: var(--radius);
+            padding: 1.8rem; display: flex; gap: 1rem;
+            border: 1px solid var(--gray-200); transition: all 0.3s;
+        }
+
+        .constat-card:hover { border-color: var(--inov-cyan); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+        .constat-icon {
+            width: 48px; height: 48px;
+            background: var(--gradient-hero); border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; flex-shrink: 0;
+        }
+
+        .constat-card h3 { font-size: 1rem; color: var(--dark); margin-bottom: 0.3rem; font-weight: 600; }
+        .constat-card p { color: var(--gray-600); font-size: 0.88rem; }
+
+        .solutions { background: var(--white); }
+        .solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+
+        .sol-card {
+            background: var(--light); border-radius: var(--radius);
+            padding: 2rem; border: 1px solid var(--gray-200);
+            transition: all 0.35s; position: relative; overflow: hidden;
+        }
+
+        .sol-card::after {
+            content: ''; position: absolute; top: 0; left: 0; right: 0;
+            height: 3px; background: var(--gradient-hero);
+            transform: scaleX(0); transform-origin: left; transition: transform 0.35s;
+        }
+
+        .sol-card:hover::after { transform: scaleX(1); }
+        .sol-card:hover { background: var(--white); box-shadow: var(--shadow-lg); transform: translateY(-5px); border-color: transparent; }
+
+        .sol-icon {
+            width: 50px; height: 50px;
+            background: var(--gradient-hero); border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; margin-bottom: 1rem;
+        }
+
+        .sol-card h3 { font-size: 1.05rem; color: var(--dark); margin-bottom: 0.5rem; font-weight: 600; }
+        .sol-card p { color: var(--gray-600); font-size: 0.88rem; line-height: 1.7; }
+
+        .process { background: var(--gradient-hero-deep); color: var(--white); }
+        .process .section-label { background: rgba(244,132,95,0.2); }
+        .process .section-title { color: var(--white); }
+        .process .section-subtitle { color: rgba(255,255,255,0.65); }
+
+        .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+
+        .step {
+            text-align: center; padding: 1.8rem 1rem;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius); transition: all 0.3s;
+        }
+
+        .step:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
+
+        .step-num {
+            width: 54px; height: 54px;
+            background: var(--white); color: var(--inov-blue);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem; font-weight: 700; margin: 0 auto 1rem;
+        }
+
+        .step h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.4rem; }
+        .step p { color: rgba(255,255,255,0.55); font-size: 0.83rem; }
+
+        .message { background: var(--light); padding: 5rem 0; }
+
+        .msg-box {
+            max-width: 780px; margin: 0 auto; text-align: center;
+            padding: 3rem; background: var(--white);
+            border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-200); position: relative;
+        }
+
+        .msg-box::before {
+            content: '❝'; position: absolute; top: -15px; left: 50%;
+            transform: translateX(-50%); font-size: 3rem;
+            color: var(--inov-coral); line-height: 1;
+        }
+
+        .msg-box h2 { font-size: 1.6rem; font-weight: 700; color: var(--dark); margin-bottom: 1.2rem; line-height: 1.4; }
+        .msg-box h2 .coral { color: var(--inov-coral); }
+        .msg-box p { color: var(--gray-600); font-size: 1rem; line-height: 1.8; margin-bottom: 0.8rem; }
+        .msg-sig { margin-top: 1.5rem; font-weight: 700; color: var(--dark); font-size: 1.05rem; }
+        .msg-sig span { display: block; font-weight: 400; font-size: 0.82rem; color: var(--inov-cyan); }
+
+        .faq { background: var(--white); }
+        .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.7rem; }
+
+        .faq-item {
+            background: var(--light); border-radius: var(--radius);
+            overflow: hidden; border: 1px solid var(--gray-200); transition: all 0.3s;
+        }
+
+        .faq-item.active { border-color: var(--inov-cyan); box-shadow: 0 4px 20px rgba(18,165,184,0.1); }
+
+        .faq-q {
+            padding: 1.2rem 1.5rem; display: flex;
+            justify-content: space-between; align-items: center;
+            cursor: pointer; font-weight: 600; color: var(--dark);
+            font-size: 0.95rem; gap: 1rem;
+        }
+
+        .faq-q:hover { color: var(--inov-cyan); }
+
+        .faq-tog {
+            width: 28px; height: 28px;
+            background: var(--white); border: 1px solid var(--gray-200);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; transition: all 0.3s; flex-shrink: 0; color: var(--inov-cyan);
+        }
+
+        .faq-item.active .faq-tog { transform: rotate(45deg); background: var(--inov-cyan); color: var(--white); border-color: var(--inov-cyan); }
+
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-a-inner { padding: 0 1.5rem 1.3rem; color: var(--gray-600); line-height: 1.8; font-size: 0.9rem; }
+
+        .cta {
+            background: var(--gradient-hero); padding: 5rem 0;
+            text-align: center; position: relative; overflow: hidden;
+        }
+
+        .cta-hex { position: absolute; right: -100px; bottom: -100px; width: 400px; height: 400px; opacity: 0.08; }
+        .cta-content { position: relative; z-index: 2; }
+        .cta h2 { font-size: 2.3rem; font-weight: 700; color: var(--white); margin-bottom: 0.8rem; }
+        .cta h2 .coral { background: var(--inov-coral); padding: 0.05em 0.3em; border-radius: 6px; }
+
+        .cta-sub {
+            color: rgba(255,255,255,0.7); font-size: 1.05rem;
+            margin-bottom: 2rem; max-width: 540px;
+            margin-left: auto; margin-right: auto;
+        }
+
+        .cta-free {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 50px; padding: 0.5rem 1.5rem;
+            color: var(--white); font-weight: 600; font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-btns { display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+
+        .cta-links { color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        .cta-links a { color: rgba(255,255,255,0.8); text-decoration: underline; text-underline-offset: 3px; }
+
+        .footer {
+            background: var(--dark); color: rgba(255,255,255,0.5);
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-grid {
+            max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+            display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 2rem; margin-bottom: 2rem;
+        }
+
+        .footer-brand img { height: 30px; margin-bottom: 0.8rem; }
+        .footer-brand p { font-size: 0.83rem; line-height: 1.7; }
+        .footer h4 { color: var(--white); font-size: 0.88rem; font-weight: 600; margin-bottom: 0.8rem; }
+        .footer ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+        .footer a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.83rem; transition: color 0.3s; }
+        .footer a:hover { color: var(--inov-turquoise); }
+
+        .footer-bottom {
+            max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex; justify-content: space-between;
+            font-size: 0.78rem; flex-wrap: wrap; gap: 0.8rem;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(35px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .anim {
+            opacity: 0; transform: translateY(20px);
+            transition: all 0.55s cubic-bezier(0.4,0,0.2,1);
+        }
+
+        .anim.vis { opacity: 1; transform: translateY(0); }
+
+        .scroll-top {
+            position: fixed; bottom: 1.5rem; right: 1.5rem;
+            width: 44px; height: 44px; background: var(--inov-cyan);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center;
+            color: var(--white); font-size: 1.1rem; font-weight: 700;
+            cursor: pointer; opacity: 0; visibility: hidden;
+            transition: all 0.3s; box-shadow: var(--shadow-cyan);
+            z-index: 100; border: none;
+        }
+
+        .scroll-top.vis { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-2px); background: var(--inov-blue); }
+
+        .nav-overlay {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0,0,0,0.5); z-index: 998;
+        }
+
+        .nav-overlay.active { display: block; }
+
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.3rem; }
+            .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+            .steps { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links {
+                position: fixed; top: 0; right: -100%; width: 80%; max-width: 320px;
+                height: 100vh; background: var(--dark); flex-direction: column;
+                padding: 4rem 1.5rem 2rem; transition: right 0.4s; z-index: 999;
+            }
+            .nav-links.active { right: 0; }
+            .nav-links a { color: rgba(255,255,255,0.8) !important; font-size: 1rem; }
+            .nav-cta-wrap { flex-direction: column; width: 100%; }
+            .hero-container { grid-template-columns: 1fr; text-align: center; padding-top: 5rem; }
+            .hero-subtitle { margin: 0 auto 2rem; }
+            .hero-buttons { justify-content: center; }
+            .hero-visual { order: -1; }
+            .hero-card { max-width: 320px; margin: 0 auto; }
+            .hero-photo { width: 140px; height: 140px; }
+            .hero h1 { font-size: 1.8rem; }
+            .hero-hex { display: none; }
+            .role-grid { grid-template-columns: 1fr; }
+            .story-layout { grid-template-columns: 1fr; }
+            .constat-grid { grid-template-columns: 1fr; }
+            .solutions-grid { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; }
+            .numbers-container { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.7rem; }
+            .cta h2 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="https://www.inovea-group.com/wp-content/uploads/2023/10/logo-inovea.png" alt="INOVEA">
+                <div class="nav-logo-sep"></div>
+                <span class="nav-logo-name">Yohan Palomba</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#role">Mon rôle</a></li>
+                <li><a href="#story">Mon histoire</a></li>
+                <li><a href="#constat">Le constat</a></li>
+                <li><a href="#solutions">Les solutions</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li class="nav-cta-wrap">
+                    <a href="#contact" class="nav-cta">📞 Me contacter</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <section class="hero" id="hero">
+        <div class="hero-hex">
+            <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M250 30 L450 140 L450 360 L250 470 L50 360 L50 140 Z" stroke="white" stroke-width="18" fill="none"/>
+                <path d="M250 80 L410 170 L410 330 L250 420 L90 330 L90 170 Z" stroke="white" stroke-width="10" fill="none" opacity="0.5"/>
+            </svg>
+        </div>
+        <div class="hero-glow"></div>
+        <div class="hero-container">
+            <div>
+                <div class="hero-badge">
+                    <img src="https://www.inovea-group.com/wp-content/uploads/2025/04/site-inovea-icon.png" alt="INOVEA">
+                    Ambassadeur INOVEA — Cabinet Ethiconsult
+                </div>
+                <h1>Votre argent mérite mieux qu'un livret.<br>Laissez-moi vous montrer <span class="coral">pourquoi</span>.</h1>
+                <p class="hero-subtitle">
+                    Je suis <strong>ambassadeur INOVEA</strong> : mon rôle, c'est de vous ouvrir les yeux sur l'importance de gérer votre patrimoine, et de vous mettre en relation avec un <strong>expert qui s'occupera de vous</strong>. Le tout, <strong>100% gratuitement</strong>.
+                </p>
+                <div class="hero-buttons">
+                    <a href="tel:+33651744269" class="btn-white">📞 06 51 74 42 69</a>
+                    <a href="#story" class="btn-ghost">Découvrir mon histoire</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-photo">
+                        <img src="photo-yohan.jpg" alt="Yohan Palomba">
+                    </div>
+                    <div class="hero-card-name">Yohan Palomba</div>
+                    <div class="hero-card-role"><strong>Ambassadeur INOVEA</strong></div>
+                    <div class="hero-card-mission">
+                        Mon rôle : <em>vous sensibiliser</em> à la gestion de patrimoine et <em>vous mettre en relation</em> avec un conseiller expert. <em>100% gratuit, de A à Z.</em>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-val">0 €</div>
+                            <div class="hero-stat-lbl">Tout est gratuit</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-val">30'</div>
+                            <div class="hero-stat-lbl">Un échange suffit</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-val">1</div>
+                            <div class="hero-stat-lbl">Expert dédié pour vous</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="numbers-bar">
+        <div class="numbers-container">
+            <div class="num-item anim"><div class="num-val">55 000+</div><div class="num-lbl">Clients accompagnés par INOVEA</div></div>
+            <div class="num-item anim"><div class="num-val">1,3 Md€</div><div class="num-lbl">D'encours sous gestion</div></div>
+            <div class="num-item anim"><div class="num-val">4,9 / 5</div><div class="num-lbl">Satisfaction client</div></div>
+        </div>
+    </div>
+
+    <section class="role" id="role">
+        <div class="section-container">
+            <div class="section-header anim">
+                <span class="section-label">Mon rôle</span>
+                <h2 class="section-title">Je ne gère pas votre argent. Je vous ouvre la porte.</h2>
+                <p class="section-subtitle">En tant qu'ambassadeur INOVEA, je suis le premier contact. Mon rôle est de vous sensibiliser et de vous orienter vers le bon expert.</p>
+            </div>
+            <div class="free-banner anim">
+                <p>🎁 <span class="coral">100% gratuit</span> — Vous ne payez jamais rien.</p>
+                <span>Ni pour l'échange avec moi, ni pour l'accompagnement par le gestionnaire de patrimoine. Tout le service est entièrement gratuit.</span>
+            </div>
+            <div class="role-grid">
+                <div class="role-content anim">
+                    <h3>Pourquoi un <span class="coral">ambassadeur</span> ?</h3>
+                    <p>Beaucoup de gens ne savent même pas qu'ils ont besoin d'un conseiller en gestion de patrimoine. Ils pensent que c'est réservé aux riches, que c'est compliqué, ou ils ont simplement <strong>peur de l'inconnu</strong>.</p>
+                    <p>C'est là que j'interviens. Mon rôle, c'est de <strong>briser ces croyances</strong>, de vous montrer concrètement pourquoi c'est important, et de vous mettre en relation avec un <strong>gestionnaire de patrimoine qualifié</strong> du réseau INOVEA / Ethiconsult qui prendra soin de votre situation.</p>
+                    <p>Je fais la présentation. L'expert fait le reste. <strong>Et personne ne vous demande jamais un centime.</strong></p>
+                </div>
+                <div class="role-cards anim">
+                    <div class="role-card"><div class="role-card-icon">💬</div><div><h4>Je vous sensibilise</h4><p>Je vous explique pourquoi il est primordial de se faire accompagner dans la gestion de son argent et de son patrimoine.</p></div></div>
+                    <div class="role-card"><div class="role-card-icon">🔎</div><div><h4>Je vous présente le service</h4><p>Je vous montre ce qu'INOVEA et le cabinet Ethiconsult peuvent faire pour vous, en toute transparence.</p></div></div>
+                    <div class="role-card"><div class="role-card-icon">🤝</div><div><h4>Je vous mets en relation</h4><p>Je contacte un gestionnaire de patrimoine expert qui analysera votre situation et vous accompagnera personnellement.</p></div></div>
+                    <div class="role-card"><div class="role-card-icon">🎁</div><div><h4>Tout est 100% gratuit</h4><p>Vous ne payez jamais rien : ni moi, ni le conseiller. L'intégralité du service est gratuite, sans frais cachés.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story" id="story">
+        <div class="section-container">
+            <div class="section-header anim">
+                <span class="section-label">Mon histoire</span>
+                <h2 class="section-title">Pourquoi je fais ça</h2>
+                <p class="section-subtitle">Ce n'est pas un discours commercial. C'est mon vécu. Et c'est peut-être aussi le vôtre.</p>
+            </div>
+            <div class="story-layout">
+                <div class="anim">
+                    <div class="story-quote">« J'ai perdu 17 ans d'intérêts composés… simplement parce que personne autour de moi ne m'avait appris comment l'argent fonctionne vraiment. »</div>
+                    <div class="story-text">
+                        <p>Je suis issu d'une famille de travailleurs modestes, <strong>sans aucune culture financière</strong>. Ma mère est secrétaire, mon grand-père ancien policier et ouvrier. Des gens honnêtes, bosseurs… mais pour qui l'argent, ça se met de côté, point final.</p>
+                        <p>À 8 ans, un drame familial m'a conduit à hériter d'une somme d'argent. Ma mère et mon grand-père ont fait ce qu'ils pensaient être le mieux : <strong>tout placer sur des livrets sécurisés</strong>. Le capital était protégé… mais les intérêts étaient quasi inexistants.</p>
+                        <p>À ma majorité, j'ai rencontré une conseillère en gestion de patrimoine. Elle m'a tout expliqué. Je suis ressorti <span class="hl">avec des étoiles dans les yeux</span>. Mais ma famille, par peur, m'a convaincu de ne rien faire. <strong>J'ai dit non à mon avenir financier.</strong></p>
+                        <p>Trois ans plus tard, j'ai enfin compris : <span class="hl">le vrai risque, ce n'est pas d'investir. C'est de ne rien faire.</span> Dès mon premier CDI, je me suis fait accompagner. En un an, mon argent m'a rapporté <strong>infiniment plus qu'en 17 ans sur un livret</strong>.</p>
+                        <p>Aujourd'hui, si je suis ambassadeur INOVEA, c'est pour <span class="hl">que personne ne perde le temps que j'ai perdu</span>. Mon rôle : vous convaincre de faire le premier pas. Le conseiller s'occupe du reste.</p>
+                    </div>
+                </div>
+                <div class="timeline anim">
+                    <div class="tl-item"><div class="tl-icon">👦</div><div><h4>L'héritage — 8 ans</h4><p>Un drame familial, un héritage placé sur des livrets. Aucune stratégie, aucun rendement.</p></div></div>
+                    <div class="tl-item"><div class="tl-icon">💡</div><div><h4>La prise de conscience — 18 ans</h4><p>Je découvre qu'il existe des solutions bien meilleures. Mais la peur de ma famille me freine.</p></div></div>
+                    <div class="tl-item"><div class="tl-icon">📚</div><div><h4>La formation — 3 ans après</h4><p>Je me forme. Le vrai allié du patrimoine, c'est le temps — pas la sécurité à tout prix.</p></div></div>
+                    <div class="tl-item"><div class="tl-icon">🚀</div><div><h4>Le passage à l'action</h4><p>Je me fais accompagner par un pro. En 1 an, plus de rendement qu'en 17 ans sur un livret.</p></div></div>
+                    <div class="tl-item"><div class="tl-icon">🤝</div><div><h4>Aujourd'hui — Ambassadeur INOVEA</h4><p>Je sensibilise et je mets en relation. Le conseiller expert fait le reste. Gratuitement.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="constat" id="constat">
+        <div class="section-container">
+            <div class="section-header anim">
+                <span class="section-label">Le constat</span>
+                <h2 class="section-title">Pourquoi il est urgent de se faire accompagner</h2>
+                <p class="section-subtitle">L'argent est partout dans nos vies. Pourtant, personne ne nous apprend à le gérer.</p>
+            </div>
+            <div class="constat-grid">
+                <div class="constat-card anim"><div class="constat-icon">📉</div><div><h3>L'inflation grignote votre épargne</h3><p>Avec 4 à 5% d'inflation, votre argent sur un livret perd de la valeur chaque année. Ne rien faire, c'est reculer.</p></div></div>
+                <div class="constat-card anim"><div class="constat-icon">🏦</div><div><h3>Votre banquier n'est pas neutre</h3><p>Il est salarié de sa banque et vend ses produits. Un conseiller indépendant choisit les meilleures solutions pour VOUS.</p></div></div>
+                <div class="constat-card anim"><div class="constat-icon">⏰</div><div><h3>Le temps est votre meilleur allié</h3><p>Grâce aux intérêts composés, chaque année perdue coûte cher. Plus vous commencez tôt, plus l'effet est puissant.</p></div></div>
+                <div class="constat-card anim"><div class="constat-icon">🎓</div><div><h3>Aucune éducation financière</h3><p>L'école ne nous apprend rien sur l'argent. Résultat : des décisions par peur ou par ignorance, pas par stratégie.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <div class="section-container">
+            <div class="section-header anim">
+                <span class="section-label">Les solutions INOVEA</span>
+                <h2 class="section-title">Ce que le conseiller que je vous présente peut faire pour vous</h2>
+                <p class="section-subtitle">Une fois mis en relation, votre gestionnaire de patrimoine vous accompagne gratuitement sur tous ces sujets.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="sol-card anim"><div class="sol-icon">🔍</div><h3>Bilan patrimonial complet</h3><p>Le conseiller réalise un audit complet de votre situation : revenus, charges, épargne, fiscalité, prévoyance. Gratuit.</p></div>
+                <div class="sol-card anim"><div class="sol-icon">📈</div><h3>Épargne & Placements</h3><p>Assurance-vie, PER, capitalisation… Il sélectionne les meilleures solutions parmi les partenaires INOVEA.</p></div>
+                <div class="sol-card anim"><div class="sol-icon">🏠</div><h3>Investissement immobilier</h3><p>Immobilier neuf, ancien, SCPI, LMNP… La stratégie immobilière adaptée à vos objectifs.</p></div>
+                <div class="sol-card anim"><div class="sol-icon">🛡️</div><h3>Protection & Prévoyance</h3><p>Protéger votre famille : assurance décès, invalidité, complémentaire santé, garantie des accidents de la vie.</p></div>
+                <div class="sol-card anim"><div class="sol-icon">💰</div><h3>Optimisation fiscale</h3><p>Réduire légalement vos impôts : PER, Girardin, déficit foncier, donations… Chaque euro compte.</p></div>
+                <div class="sol-card anim"><div class="sol-icon">🎯</div><h3>Préparation retraite</h3><p>Anticiper dès maintenant pour maintenir votre niveau de vie. Le temps joue en votre faveur.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="processus">
+        <div class="section-container">
+            <div class="section-header anim">
+                <span class="section-label">Comment ça marche</span>
+                <h2 class="section-title">Du premier échange au suivi personnalisé</h2>
+                <p class="section-subtitle">Un parcours simple, transparent et 100% gratuit du début à la fin.</p>
+            </div>
+            <div class="steps">
+                <div class="step anim"><div class="step-num">1</div><h3>Vous me contactez</h3><p>Un simple appel ou email. On échange sur votre situation et je vous explique l'intérêt de se faire accompagner.</p></div>
+                <div class="step anim"><div class="step-num">2</div><h3>Je vous présente le service</h3><p>Je vous montre concrètement ce qu'INOVEA et Ethiconsult peuvent faire pour vous. Sans jargon, sans pression.</p></div>
+                <div class="step anim"><div class="step-num">3</div><h3>Je vous mets en relation</h3><p>Je contacte un gestionnaire de patrimoine qualifié qui prendra en charge votre dossier personnellement.</p></div>
+                <div class="step anim"><div class="step-num">4</div><h3>Le conseiller s'occupe de vous</h3><p>Bilan, stratégie sur-mesure, mise en place et suivi régulier. Tout est gratuit, vous ne payez jamais rien.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message" id="message">
+        <div class="section-container">
+            <div class="msg-box anim">
+                <h2>La seule vraie erreur, c'est de <span class="coral">ne pas se faire aider</span>.</h2>
+                <p>Si ma famille et moi avions été éduqués financièrement, ça ne ferait pas 1 an que j'investis… mais 17 ans. <strong>17 ans d'intérêts composés perdus.</strong> À cause d'un seul problème : le manque de savoir.</p>
+                <p>Peu importe la taille de votre patrimoine. Peu importe si vous n'y connaissez rien. Ce qui compte, c'est de <strong>prendre l'initiative</strong>. Contactez-moi, et je vous mets en relation avec quelqu'un qui saura vous accompagner. <strong>Gratuitement.</strong></p>
+                <p><strong>Ne perdez pas le temps que j'ai perdu.</strong></p>
+                <div class="msg-sig">Yohan Palomba<span>Ambassadeur INOVEA — Cabinet Ethiconsult</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="section-container">
+            <div class="section-header anim">
+                <span class="section-label">Questions fréquentes</span>
+                <h2 class="section-title">Vos questions, mes réponses</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active anim">
+                    <div class="faq-q" onclick="toggleFaq(this)">C'est vraiment 100% gratuit ?<span class="faq-tog">+</span></div>
+                    <div class="faq-a" style="max-height:200px"><div class="faq-a-inner">Oui, totalement. Vous ne payez jamais rien, ni pour l'échange avec moi, ni pour l'accompagnement par le gestionnaire de patrimoine. L'intégralité du service — du bilan patrimonial au suivi personnalisé — est gratuite pour vous. La rémunération provient des partenaires financiers, pas de votre poche.</div></div>
+                </div>
+                <div class="faq-item anim">
+                    <div class="faq-q" onclick="toggleFaq(this)">Quel est votre rôle exactement ?<span class="faq-tog">+</span></div>
+                    <div class="faq-a"><div class="faq-a-inner">Je suis ambassadeur INOVEA, pas conseiller financier. Mon rôle est de vous sensibiliser à l'importance de la gestion de patrimoine et de vous mettre en relation avec un gestionnaire de patrimoine qualifié du réseau INOVEA / cabinet Ethiconsult. C'est lui qui analysera votre situation et vous accompagnera.</div></div>
+                </div>
+                <div class="faq-item anim">
+                    <div class="faq-q" onclick="toggleFaq(this)">Faut-il être riche pour se faire accompagner ?<span class="faq-tog">+</span></div>
+                    <div class="faq-a"><div class="faq-a-inner">Pas du tout ! La gestion de patrimoine n'est pas réservée aux grandes fortunes. Que vous ayez 50 € ou 50 000 € d'épargne, un conseiller peut vous aider à optimiser votre situation. Plus vous commencez tôt, plus l'effet est puissant.</div></div>
+                </div>
+                <div class="faq-item anim">
+                    <div class="faq-q" onclick="toggleFaq(this)">Quelle différence avec mon banquier ?<span class="faq-tog">+</span></div>
+                    <div class="faq-a"><div class="faq-a-inner">Votre banquier est salarié de sa banque et ne propose que ses produits. Le conseiller INOVEA est indépendant : il a accès à des centaines de solutions de différents partenaires et choisit uniquement ce qui est le mieux pour vous. Et contrairement à ce qu'on pourrait croire, c'est gratuit.</div></div>
+                </div>
+                <div class="faq-item anim">
+                    <div class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que le réseau INOVEA ?<span class="faq-tog">+</span></div>
+                    <div class="faq-a"><div class="faq-a-inner">INOVEA est un réseau de plus de 1 200 conseillers en gestion de patrimoine, avec plus de 55 000 clients et 1,3 milliard d'euros d'encours. Créé en 2017, il offre un accompagnement personnalisé avec des partenaires reconnus (SwissLife, Corum, Sofidy…) et une approche pédagogique unique. Note de satisfaction : 4,9/5.</div></div>
+                </div>
+                <div class="faq-item anim">
+                    <div class="faq-q" onclick="toggleFaq(this)">Que se passe-t-il après vous avoir contacté ?<span class="faq-tog">+</span></div>
+                    <div class="faq-a"><div class="faq-a-inner">On échange ensemble pour que je comprenne votre situation. Ensuite, je vous mets en relation avec un gestionnaire de patrimoine du cabinet Ethiconsult / réseau INOVEA. Il vous recontacte, analyse votre situation et vous propose une stratégie personnalisée. Tout est gratuit et vous restez libre à chaque étape, sans aucun engagement.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="contact">
+        <div class="hero-hex cta-hex">
+            <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M250 30 L450 140 L450 360 L250 470 L50 360 L50 140 Z" stroke="white" stroke-width="18" fill="none"/>
+            </svg>
+        </div>
+        <div class="section-container">
+            <div class="cta-content anim">
+                <h2>Faites le premier pas.<br>Je m'occupe <span class="coral">du reste</span>.</h2>
+                <p class="cta-sub">Un simple échange suffit. Je vous écoute, je vous explique, et je vous mets en relation avec un expert qui prendra soin de votre patrimoine.</p>
+                <div class="cta-free">🎁 100% gratuit — Vous ne payez jamais rien</div>
+                <div class="cta-btns">
+                    <a href="tel:+33651744269" class="btn-white">📞 06 51 74 42 69</a>
+                    <a href="mailto:yohanpalomba@gmail.com" class="btn-ghost">✉️ yohanpalomba@gmail.com</a>
+                </div>
+                <div class="cta-links">
+                    En savoir plus :
+                    <a href="https://www.ethiconsult.fr/" target="_blank">Ethiconsult</a> ·
+                    <a href="https://www.inovea-group.com/" target="_blank">INOVEA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="https://www.inovea-group.com/wp-content/uploads/2023/10/logo-inovea.png" alt="INOVEA">
+                <p>Yohan Palomba — Ambassadeur INOVEA, rattaché au cabinet Ethiconsult. Je sensibilise à l'importance de la gestion de patrimoine et mets en relation avec des conseillers experts. Service 100% gratuit.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#role">Mon rôle</a></li>
+                    <li><a href="#story">Mon histoire</a></li>
+                    <li><a href="#constat">Le constat</a></li>
+                    <li><a href="#solutions">Les solutions</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Écosystème</h4>
+                <ul>
+                    <li><a href="https://www.inovea-group.com/" target="_blank">INOVEA Group</a></li>
+                    <li><a href="https://www.ethiconsult.fr/" target="_blank">Cabinet Ethiconsult</a></li>
+                    <li><a href="https://www.inovea-group.com/application-filianse/" target="_blank">App Filianse</a></li>
+                    <li><a href="https://www.inovea-group.com/simuler-un-projet/" target="_blank">Simuler mon projet</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Me contacter</h4>
+                <ul>
+                    <li><a href="tel:+33651744269">📞 06 51 74 42 69</a></li>
+                    <li><a href="mailto:yohanpalomba@gmail.com">✉️ yohanpalomba@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Yohan Palomba — Ambassadeur INOVEA | Cabinet Ethiconsult</span>
+            <div>
+                <a href="https://www.inovea-group.com/" target="_blank">inovea-group.com</a>
+                &nbsp;·&nbsp;
+                <a href="https://www.ethiconsult.fr/" target="_blank">ethiconsult.fr</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', scrollY > 50);
+            document.getElementById('scrollTop').classList.toggle('vis', scrollY > 500);
+        });
+        const hb = document.getElementById('hamburger');
+        const nl = document.getElementById('navLinks');
+        const ov = document.getElementById('navOverlay');
+        hb.onclick = () => { nl.classList.toggle('active'); ov.classList.toggle('active'); };
+        ov.onclick = () => { nl.classList.remove('active'); ov.classList.remove('active'); };
+        nl.querySelectorAll('a').forEach(a => a.onclick = () => { nl.classList.remove('active'); ov.classList.remove('active'); });
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const ans = item.querySelector('.faq-a');
+            const was = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('active'); i.querySelector('.faq-a').style.maxHeight = '0'; });
+            if (!was) { item.classList.add('active'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+        }
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        document.querySelectorAll('.anim').forEach(el => obs.observe(el));
+    </script>
+</body>
+</html>
